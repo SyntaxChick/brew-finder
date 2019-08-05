@@ -1,0 +1,90 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    height: 20px;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+
+  .App-wrapper {
+    display: flex;
+
+    @media screen and (max-width: 900px){
+      display: block;
+    }
+  }
+
+  .App-map {
+    width: 50%;
+
+    @media screen and (max-width: 900px){
+      width: 100%;
+    }
+
+    div {
+      height: 100vh;
+      width: 100%;
+
+      @media screen and (max-width: 900px){
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+ 
+  }
+
+  .App-list {
+    width: 50%;
+
+    @media screen and (max-width: 900px){
+      width: 100%;
+    }
+  }
+
+
+  .button {
+    background-color: #282c34;
+    color: #FFF;
+    font-weight: 700;
+    padding: 20px 30px;
+    margin: 20px auto;
+    text-decoration: none;
+    display: block;
+    max-width: 300px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
