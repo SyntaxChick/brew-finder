@@ -30,7 +30,7 @@ class Brewery extends Component {
                 </div>
                 <div className="App-list">
                     <h1>{brewery.name}</h1>
-                    <a href={brewery.website_url}>View Website</a> | {brewery.brewery_type}
+                    <a href={brewery.website_url} target="_blank" rel="noopener noreferrer">View Website</a> | {brewery.brewery_type}
                     <p>
                         {brewery.street}<br />
                         {brewery.city}, {brewery.state} {brewery.postal_code}<br />

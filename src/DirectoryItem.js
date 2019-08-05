@@ -10,7 +10,7 @@ const DirectoryItem = ({ brewery }) => (
     {brewery.brewery_type} <br />
     {brewery.street}<br />
     {brewery.city}, {brewery.state} {brewery.postal_code}<br />
-    <a href={brewery.website_url} target="_blank">View Website</a>
+    <a href={brewery.website_url} target="_blank" rel="noopener noreferrer">View Website</a>
   </div>
 );
 
