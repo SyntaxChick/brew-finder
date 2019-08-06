@@ -41,6 +41,8 @@ class DirectoryMap extends Component {
             defaultCenter={this.props.defaultCenter}
             center={{ lat: this.state.center_lat, lng: this.state.center_lng }}
             defaultZoom={this.props.zoom}
+            yesIWantToUseGoogleMapApiInternals
+            options={{zoomControl: true}}
           >
           
           {this.props.breweries.map(brewery => 

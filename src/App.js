@@ -14,15 +14,11 @@ const App = () => (
       <div className="App">
         <header className="App-header">
           Brew Finder
-        
-          
         </header>
         <Switch>
-          <Route path="/:id" component={Brewery} />
+          <Route path="/brewery/:id" component={Brewery} />
           <Route exact path="/" component={Directory} />
         </Switch>
-        
-        
       </div>
   </Router>
 );

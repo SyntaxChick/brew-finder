@@ -358,14 +358,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/src/GoogleMapStyles.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/src/GoogleMapStyles-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/src/index.css": {
 		"aP": 1,
 		"bl": 0,

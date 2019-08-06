@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 import BreweryMap from './BreweryMap';
 
@@ -9,7 +10,8 @@ class Brewery extends Component {
 
     async componentDidMount() {
         try {
-            const res = await fetch(`https://api.openbrewerydb.org/breweries/${this.props.match.params.id}`);
+            // https://api.openbrewerydb.org/breweries/${this.props.match.params.id}`
+            const res = await fetch(`https://brewerybe-sarah90431.codeanyapp.com/brew-storer/public/api/brewery/${this.props.match.params.id}`);
             const brewery = await res.json();
 
             this.setState({
@@ -36,7 +38,7 @@ class Brewery extends Component {
                         {brewery.city}, {brewery.state} {brewery.postal_code}<br />
                     </p>
 
-                    <a href="/" className="button">Find More Brews ></a>
+                    <Link to={`/`} className="button">Find More Brews ></Link>
                 </div>
 
             </div>

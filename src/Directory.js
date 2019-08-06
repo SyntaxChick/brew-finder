@@ -12,7 +12,7 @@ class Directory extends Component {
   async componentDidMount() {
     try {
       //https://brewerybe-sarah90431.codeanyapp.com/brew-storer/public/api/breweries
-      const res = await fetch('https://api.openbrewerydb.org/breweries?by_city=Carlisle&by_state=Pennsylvania');
+      const res = await fetch('https://brewerybe-sarah90431.codeanyapp.com/brew-storer/public/api/breweries');
       const breweries = await res.json();
 
       this.setState({

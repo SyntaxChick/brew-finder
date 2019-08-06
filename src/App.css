@@ -44,6 +44,14 @@
     .App-list {
       width: 100%; } }
 
+.App-item {
+  text-align: left;
+  border-bottom: 1px solid #282c34;
+  margin: 20px 40px;
+  padding-bottom: 15px; }
+  .App-item a {
+    color: #282c34; }
+
 .button {
   background-color: #282c34;
   color: #FFF;
