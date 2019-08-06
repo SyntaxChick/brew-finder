@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const DirectoryItem = ({ brewery }) => (
@@ -15,9 +14,3 @@ const DirectoryItem = ({ brewery }) => (
 );
 
 export default DirectoryItem;
-
-DirectoryItem.propTypes = {
-  brewery: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-  }).isRequired,
-};

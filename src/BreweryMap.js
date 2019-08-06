@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react';
 import logo from './logo.svg';
 
 
-
 class BreweryMap extends Component {
 
   state = {
@@ -24,9 +23,9 @@ class BreweryMap extends Component {
   componentDidUpdate() {
     if(!isNaN(Number(this.props.brewery.latitude)) && !this.state.load){
       this.setState({
-          center_lat: Number(this.props.brewery.latitude),
-          center_lng: Number(this.props.brewery.longitude),
-          load: 1
+        center_lat: Number(this.props.brewery.latitude),
+        center_lng: Number(this.props.brewery.longitude),
+        load: 1
       });
     }
   }

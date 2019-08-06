@@ -26,17 +26,16 @@ class Directory extends Component {
 
   render() {
     return (
-        <div className="App-wrapper">
-            <div className="App-map">
-                <DirectoryMap breweries={this.state.breweries}></DirectoryMap>
-            </div>
-            <div className="App-list">      
-            
-            {this.state.breweries.map(brewery => <DirectoryItem key={brewery.id} brewery={brewery} />)}
-       
-            </div>
-        
+      <div className="App-wrapper">
+        <div className="App-map">
+            <DirectoryMap breweries={this.state.breweries}></DirectoryMap>
         </div>
+
+        <div className="App-list">      
+          {this.state.breweries.map(brewery => <DirectoryItem key={brewery.id} brewery={brewery} />)}
+        </div>
+      
+      </div>
 
     );
   }

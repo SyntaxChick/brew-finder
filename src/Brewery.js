@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import BreweryMap from './BreweryMap';
+import DirectoryItem from './DirectoryItem';
+
 
 class Brewery extends Component {
     state = {
@@ -25,24 +27,22 @@ class Brewery extends Component {
 
     render () {
         const { brewery } = this.state;
+
         return (
             <div className="App-wrapper">
                 <div className="App-map">
                     <BreweryMap brewery={brewery}></BreweryMap>
                 </div>
                 <div className="App-list">
-                    <h1>{brewery.name}</h1>
-                    <a href={brewery.website_url} target="_blank" rel="noopener noreferrer">View Website</a> | {brewery.brewery_type}
-                    <p>
-                        {brewery.street}<br />
-                        {brewery.city}, {brewery.state} {brewery.postal_code}<br />
-                    </p>
+
+                    <DirectoryItem key={brewery.id} brewery={brewery} />
 
                     <Link to={`/`} className="button">Find More Brews ></Link>
                 </div>
 
             </div>
         );
+    
     }
 }
 
